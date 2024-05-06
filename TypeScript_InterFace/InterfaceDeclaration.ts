@@ -1,0 +1,3 @@
+interface person {
+    name: string
+}
