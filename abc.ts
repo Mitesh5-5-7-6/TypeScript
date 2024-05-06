@@ -1,0 +1,3 @@
+interface we {
+    name: string;
+}
