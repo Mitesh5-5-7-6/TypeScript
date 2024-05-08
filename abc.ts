@@ -1,3 +1,0 @@
-interface we {
-    name: string;
-}
