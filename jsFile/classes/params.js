@@ -1,36 +1,33 @@
+"use strict";
 // Public
 class publics {
-    constructor(public name: string) {
-
+    constructor(name) {
+        this.name = name;
     }
 }
 const obj = new publics("Mitesh");
-console.log(obj.name)
-
-
+console.log(obj.name);
 // Private
 class privates {
-    constructor(private name: string) {
-
+    constructor(name) {
+        this.name = name;
     }
 }
 const obj1 = new privates("Jay");
 // console.log(obj1.name)
-
-
 // Protected
 class protecteds {
-    constructor(protected name: string) {
-        console.log(name)
+    constructor(name) {
+        this.name = name;
+        console.log(name);
     }
 }
 // const obj2 = new protecteds("Jayyogi");
 // console.log(obj2.name);  // not use outer side protected... use exted protected to public
-
 class protectedExtend extends protecteds {
-    public getName() {
+    getName() {
         return this.name;
     }
 }
-const obj2 = new protectedExtend("Jayyogi")
-console.log(obj2.getName())
+const obj2 = new protectedExtend("Jayyogi");
+console.log(obj2.getName());

@@ -12,7 +12,7 @@ function welcomePeople(x) {
     }
     else {
         // Here: 'x' is 'string'
-        console.log("Welcome lone traveler " + x);
+        console.log("Welcome lone traveler " + x);
     }
 }
 welcomePeople(["Abc", "Xyz", "Efg"]);
