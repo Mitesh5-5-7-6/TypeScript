@@ -14,14 +14,14 @@ console.log(info32);
 
 function welcomePeople(x: string[] | string) {
     if (Array.isArray(x)) {
-        // Here: 'x' is 'string[]'
+        // Here:  'x' is 'string[]'
         console.log("Hello, " + x.join(" and "));
     } else {
         // Here: 'x' is 'string'
-        console.log("Welcome lone traveler " + x);
+        console.log("Welcome lone traveler " + x);
     }
 }
-welcomePeople(["Abc", "Xyz", "Efg"]);
+welcomePeople(["Abc", "X yz", "Efg"]);
 welcomePeople("Mitesh")
 
 type jay = {
@@ -32,7 +32,6 @@ type jay = {
 interface person {
     name: string;
 }
-
 interface person {
-    name: string;
+    age: number;
 }
